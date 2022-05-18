@@ -8,6 +8,7 @@ private:
     int maxsize;
     int orderDate;
     int orderDeliveryDate;
+    DelivaryInfo* delivaryinfo;
 
 public:
     Order(int oId, int size);
