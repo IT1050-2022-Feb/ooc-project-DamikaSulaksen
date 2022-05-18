@@ -1,17 +1,23 @@
 #pragma once
-class Customer
-{
+#define SIZE 2
+class Customer {
+
 private:
-    char NIC[12];
-    char name[20];
-    char address[40];
-    char enail[20];
-    int contactNo;
-    Cart* cart;
-    Order* order;
+	char NIC[12];
+	char name[30];
+	char address[50];
+	char email[20];
+	int contactNo;
+	Cart* c1[SIZE];
+
 public:
-    Customer();
-    void updateProfile(const char cName[], const char cAddress[], const char cEmail[], int contact);
-    ~Customer();
+	Customer();
+	Customer(Cart* cID1, Cart* cID2);
+	Customer(char nic[], char nam[], char add[], char mail[], int contN);
+	void displayCart();
+	void payTotalAmount();
+	void getCustomerDetails(History* h1);
+	void updateProfile();
+	~Customer();
 };
 
