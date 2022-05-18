@@ -11,6 +11,7 @@ private:
     DelivaryInfo* delivaryinfo;
 
 public:
+    Order();
     Order(int oId, int size);
     void addItem(int id, const char name[], double oPrice, int oDate, int oDelivaryDate);
     double calcTotPrice();

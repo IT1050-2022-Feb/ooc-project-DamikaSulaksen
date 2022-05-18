@@ -10,6 +10,8 @@ private:
     Cart* cart;
     Order* order;
 public:
+    Customer();
     void updateProfile(const char cName[], const char cAddress[], const char cEmail[], int contact);
+    ~Customer();
 };
 

@@ -7,6 +7,10 @@ Order::Order(int oId, int size)
     count = 0;
 }
 
+Order::Order()
+{
+}
+
 void Order::addItem(int id, const char name[], double oPrice, int oDate, int oDelivaryDate)
 {
 }
